@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #FFC3A0, #FFAFBD);
+            color: #333;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        h2 { font-size: 24px; }
+        p { font-size: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h2>Daily Affirmation</h2>
+    <p id="affirmation"></p>
+    <script>
+        const affirmations = [
+            "You are enough.",
+            "You are capable of great things.",
+            "Every day is a fresh start.",
+            "You radiate confidence and strength."
+        ];
+        document.getElementById("affirmation").innerText = affirmations[Math.floor(Math.random() * affirmations.length)];
+    </script>
+</body>
+</html>
