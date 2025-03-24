@@ -59,19 +59,8 @@ function getDailyAffirmation() {
 }
 
 const widget = document.createElement("div");
-widget.style.fontFamily = "Inter, sans-serif";
-widget.style.textAlign = "center";
-widget.style.display = "flex";
-widget.style.justifyContent = "center";
-widget.style.alignItems = "center";
-widget.style.height = "100%";
-widget.style.width = "100%";
-widget.style.padding = "20px";
-widget.style.fontSize = "1.5em";
-widget.style.lineHeight = "1.4";
-widget.style.backgroundColor = "#AD8D74";
-widget.style.color = "#403B32";
+
 widget.id = "affirmation-widget"; // Assign the ID for CSS styling
-widget.innerText = getDailyAffirmation();
+
 
 document.body.appendChild(widget);
