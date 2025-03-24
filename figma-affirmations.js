@@ -71,6 +71,7 @@ widget.style.fontSize = "1.5em";
 widget.style.lineHeight = "1.4";
 widget.style.backgroundColor = "#AD8D74";
 widget.style.color = "#403B32";
+widget.id = "affirmation-widget"; // Assign the ID for CSS styling
 widget.innerText = getDailyAffirmation();
 
 document.body.appendChild(widget);
