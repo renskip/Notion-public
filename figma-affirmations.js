@@ -54,7 +54,11 @@ const affirmations = [
 
 function getDailyAffirmation() {
   const today = new Date();
-  const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 86400000); 
+  const startOfYear = new Date(today.getFullYear(), 0, 0);
+  const diff = today - startOfYear;
+  const oneDay = 1000 * 60 * 60 * 24;
+  const dayOfYear = Math.floor(diff / oneDay);
+  
   return affirmations[dayOfYear % affirmations.length];
 }
 
