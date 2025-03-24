@@ -63,7 +63,7 @@ function getDailyAffirmation() {
 }
 
 const widget = document.createElement("div");
-
+widget.innerText = getDailyAffirmation(); // This ensures text is displayed
 widget.id = "affirmation-widget"; // Assign the ID for CSS styling
 
 
