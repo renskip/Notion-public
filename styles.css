@@ -1,14 +1,18 @@
-body {
-    font-family: "Inter", sans-serif;
-    text-align: center;
+html, body {
+    height: 100%;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
+    background-color: #AD8D74;
+    color: #403B32;
+    font-family: "Inter", sans-serif;
+}
+
+#affirmation-widget {
+    text-align: center;
     padding: 20px;
     font-size: 1.5em;
     line-height: 1.4;
-    background-color: #AD8D74;
-    color: #403B32;
+    max-width: 80%;
 }
