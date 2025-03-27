@@ -53,32 +53,13 @@ const affirmations = [
 ];
 
 function getDailyAffirmation() {
-  const today = new Date();
-  const startOfYear = new Date(today.getFullYear(), 0, 0);
-  const diff = today - startOfYear;
-  const oneDay = 1000 * 60 * 60 * 24;
-  const dayOfYear = Math.floor(diff / oneDay);
-  
-  // Ensure this calculation gives a valid index
-  return affirmations[dayOfYear % affirmations.length];
+  const today = new Date().toISOString().split("T")[0];
+  const hash = today.split("-").join("") % affirmations.length;
+  return affirmations[hash];
 }
 
 const widget = document.createElement("div");
-widget.style.fontFamily = "Inter, sans-serif";
-widget.style.textAlign = "center";
-widget.style.display = "flex";
-widget.style.justifyContent = "center";
-widget.style.alignItems = "center";
-widget.style.height = "100vh";  // Ensure the widget fills the screen
-widget.style.width = "100%";
-widget.style.padding = "20px";
-widget.style.fontSize = "1.5em";
-widget.style.lineHeight = "1.4";
-widget.style.backgroundColor = "#AD8D74";
-widget.style.color = "#403B32";
-
-widget.innerText = getDailyAffirmation(); // This ensures text is displayed
-widget.id = "affirmation-widget"; // Assign the ID for CSS styling
-
+widget.id = "affirmation-widget"; // Assign ID for styling
+widget.innerText = getDailyAffirmation();
 
 document.body.appendChild(widget);
