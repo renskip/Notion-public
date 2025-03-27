@@ -58,11 +58,12 @@ function getDailyAffirmation() {
   return affirmations[hash];
 }
 
+// Create the widget div
 const widget = document.createElement("div");
-widget.id = "affirmation-widget"; // Use an ID for CSS styling
+widget.id = "affirmation-widget"; // Assign an ID for CSS styling
 widget.innerText = getDailyAffirmation();
-
 document.body.appendChild(widget);
+
 
 
 
