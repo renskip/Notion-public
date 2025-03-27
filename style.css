@@ -1,28 +1,22 @@
-/* style.css */
 body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  color: #403B32;
-  font-family: "Inter", sans-serif;
+    background-color: #AD8D74;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Inter", sans-serif;
 }
 
 #affirmation-widget {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  padding: 20px;
-  font-size: 1.5em;
-  line-height: 1.4;
-  background-color: #AD8D74‎;
-  color: #403B32;
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
-  margin: 20px; /* Margin around the widget */
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    line-height: 1.4;
+    background-color: #AD8D74;
+    color: #403B32;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
